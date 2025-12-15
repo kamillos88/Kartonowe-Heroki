@@ -12,19 +12,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* BACKGROUND Z PRZEKĄTNĄ - Czerwony/Biały/Niebieski */
+/* BACKGROUND Z TRÓJKĄTAMI - Czerwony lewy dolny, Niebieski prawy górny */
 .intro-screen,
 .summary-screen,
 .voting-screen {
   min-height: 100vh;
-  background: linear-gradient(135deg, 
-    #FE2525 0%, 
-    #FE2525 30%, 
-    #FFFFFF 35%,
-    #FFFFFF 65%, 
-    #296DC7 70%, 
-    #296DC7 100%
-  );
+  background: 
+    linear-gradient(to top right, #FE2525 0%, #FE2525 45%, transparent 45%),
+    linear-gradient(to bottom left, #296DC7 0%, #296DC7 45%, transparent 45%),
+    #FFFFFF;
   padding: 20px;
 }
 
@@ -297,20 +293,20 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* MOCNE KOLORY DLA TIERÓW */
+/* PEŁNE MOCNE KOLORY DLA TIERÓW - BEZ PRZEŹROCZYSTOŚCI */
 .clip-card.tier-tier1 {
   border-color: #FFD700;
-  background: rgba(255, 215, 0, 0.25);
+  background: #FFD700;
 }
 
 .clip-card.tier-tier2 {
   border-color: #D3D3D3;
-  background: rgba(211, 211, 211, 0.25);
+  background: #D3D3D3;
 }
 
 .clip-card.tier-tier3 {
   border-color: #CD7F32;
-  background: rgba(205, 127, 50, 0.25);
+  background: #CD7F32;
 }
 
 .clip-video {
@@ -390,26 +386,26 @@ body {
   transform: scale(1.05);
 }
 
-/* MOCNE KOLORY TIERÓW */
+/* PEŁNE MOCNE KOLORY TIERÓW - BEZ GRADIENTÓW I PRZEŹROCZYSTOŚCI */
 .tier1-button.active {
   background: #FFD700;
   color: #000;
   border-color: #FFA500;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
 
 .tier2-button.active {
   background: #D3D3D3;
   color: #000;
   border-color: #A9A9A9;
-  box-shadow: 0 0 15px rgba(211, 211, 211, 0.6);
+  box-shadow: 0 0 20px rgba(211, 211, 211, 0.8);
 }
 
 .tier3-button.active {
   background: #CD7F32;
   color: #fff;
   border-color: #8B4513;
-  box-shadow: 0 0 15px rgba(205, 127, 50, 0.6);
+  box-shadow: 0 0 20px rgba(205, 127, 50, 0.8);
 }
 
 /* ACTION BUTTONS */
@@ -475,16 +471,29 @@ body {
   box-shadow: none;
 }
 
+/* MOCNY CZARNY CIEŃ NA TEKSTACH INFO */
 .info-text {
   text-align: center;
   color: #fff;
-  font-size: 1rem;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-shadow: 
+    -2px -2px 4px #000,
+    2px -2px 4px #000,
+    -2px 2px 4px #000,
+    2px 2px 4px #000,
+    0 0 8px #000;
 }
 
 .info-text.warning {
   color: #FE2525;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-shadow: 
+    -2px -2px 5px #000,
+    2px -2px 5px #000,
+    -2px 2px 5px #000,
+    2px 2px 5px #000,
+    0 0 10px #000,
+    0 0 15px #000;
 }

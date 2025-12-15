@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AlertCircle } from 'lucide-react';
+import { saveVoteToFirebase } from './firebase';
 import './index.css';
 
 // Przykładowe dane - TUTAJ WPISZ SWOJE KLIPY I KATEGORIE
@@ -138,6 +139,7 @@ function App() {
     } else {
       const id = generateVoteId();
       try {
+        await saveVoteToFirebase(id, newVotes);
         saveVote(id, newVotes);
         setVoteId(id);
         setCurrentScreen('summary');
@@ -175,6 +177,7 @@ function App() {
     } else {
       const id = generateVoteId();
       try {
+        await saveVoteToFirebase(id, newVotes);
         saveVote(id, newVotes);
         setVoteId(id);
         setCurrentScreen('summary');
@@ -222,7 +225,7 @@ function App() {
       <div className="intro-screen">
         <div className="intro-container">
           <h1 className="intro-title">
-            🏆 Złote Antosie 2024 🏆
+            🏆 Kartonowe Heroki 2025 🏆
           </h1>
           <p className="intro-subtitle">
             Głosowanie na najlepsze klipy z naszego serwera!
