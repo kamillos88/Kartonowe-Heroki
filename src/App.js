@@ -10,44 +10,44 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Clip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wszyscy razem grają i dobrze się bawią" },
-      { id: 2, title: "Clip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Moment gdzie wszyscy się wspierają" },
-      { id: 3, title: "Clip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Clip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wspólne śmianie się z głupoty" },
-      { id: 5, title: "Clip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Moment wsparcia po porażce" },
-      { id: 6, title: "Clip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Clip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wszyscy w voice chacie gadają o życiu" },
-      { id: 8, title: "Clip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Rodzinny obiad w grze" },
+      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wszyscy drą mordę na siebie" },
+      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wspieramy się" },
+      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Zupa obiad" },
     ]
   },
   {
     id: 2,
-    name: "Najlepszy Clutch",
-    description: "Wybierz najbardziej epicką akcję clutchową",
+    name: "Najlepsze Zagranie",
+    description: "Wybierz najbardziej epicką akcję",
     clips: [
-      { id: 1, title: "Clutch #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "1v5 i wygrana" },
-      { id: 2, title: "Clutch #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Ostatnia sekunda defuse" },
-      { id: 3, title: "Clutch #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Ace w ostatniej rundzie" },
-      { id: 4, title: "Clutch #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Niesamowity comeback" },
-      { id: 5, title: "Clutch #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Perfect timing" },
-      { id: 6, title: "Clutch #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Clutch z nożem" },
-      { id: 7, title: "Clutch #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Blind shot do wygranej" },
-      { id: 8, title: "Clutch #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "1HP clutch" },
+      { id: 1, title: "Zagranie #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 2, title: "Zagranie #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 3, title: "Zagranie #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 4, title: "Zagranie #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Relik trafił przeciwnika (nie zdarza się to często)" },
+      { id: 5, title: "Zagranie #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 6, title: "Zagranie #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 7, title: "Zagranie #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Penta kill" },
+      { id: 8, title: "Zagranie #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
     ]
   },
   {
     id: 3,
-    name: "Najbardziej Fail",
-    description: "Wybierz największą wtopę/faila",
+    name: "Największy Szpont",
+    description: "Wybierz największy szpont",
     clips: [
-      { id: 1, title: "Fail #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Team kill w najgorszym momencie" },
-      { id: 2, title: "Fail #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Spadnięcie z mapy" },
-      { id: 3, title: "Fail #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Miss z AWP z 2 metrów" },
-      { id: 4, title: "Fail #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Zabicie się granatem" },
-      { id: 5, title: "Fail #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wbiegniecie w molotov" },
-      { id: 6, title: "Fail #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Pomyłka gracza z wrogiem" },
-      { id: 7, title: "Fail #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Epic disconnect w ważnym momencie" },
-      { id: 8, title: "Fail #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Przypadkowy drop broni wrogowi" },
+      { id: 1, title: "Szpont #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Relik jak zwykle szponci" },
+      { id: 2, title: "Szpont #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 3, title: "Szpont #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 4, title: "Szpont #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 5, title: "Szpont #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 6, title: "Szpont #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 7, title: "Szpont #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "hej" },
+      { id: 8, title: "Szpont #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
     ]
   },
 ];
@@ -249,7 +249,7 @@ function App() {
           <div className="info-box">
             <h2 className="info-title">📋 Jak głosować?</h2>
             <ul className="info-list">
-              <li>• Zobaczysz {CATEGORIES.length} kategorii, każda z 8 klipami</li>
+              <li>• Zobaczysz {CATEGORIES.length} kategorii, prawie każda z 8 klipami</li>
               <li>• Możesz zagłosować na TOP 3 klipy (🥇 🥈 🥉)</li>
               <li>• Kliknij na klip, a potem wybierz tier (1, 2 lub 3)</li>
               <li>• Możesz pominąć kategorię przyciskiem SKIP</li>
@@ -258,7 +258,7 @@ function App() {
           </div>
 
           <button onClick={() => setCurrentScreen('voting')} className="start-button">
-            Zacznij Głosowanie! 🚀
+            Zacznij Głosowanie!
           </button>
         </div>
       </div>

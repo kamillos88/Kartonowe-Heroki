@@ -12,15 +12,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* BACKGROUND Z TRÓJKĄTAMI - Czerwony lewy dolny, Niebieski prawy górny - ROZMAZANE */
+/* BACKGROUND Z TRÓJKĄTAMI - Czerwony lewy dolny, Niebieski prawy górny */
 .intro-screen,
 .summary-screen,
 .voting-screen {
   min-height: 100vh;
   background: 
-    radial-gradient(ellipse at bottom left, #EF0E0E 0%, rgba(254, 37, 37, 0.8) 25%, transparent 50%),
-    radial-gradient(ellipse at top right, #0E6FEE 0%, rgba(41, 109, 199, 0.8) 25%, transparent 50%),
-    linear-gradient(135deg, rgba(254, 37, 37, 0.3) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(41, 109, 199, 0.3) 100%);
+    linear-gradient(to top right, #FE2525 0%, #FE2525 45%, transparent 45%),
+    linear-gradient(to bottom left, #296DC7 0%, #296DC7 45%, transparent 45%),
+    #FFFFFF;
   padding: 20px;
 }
 
@@ -396,9 +396,9 @@ body {
 }
 
 .tier2-button.active {
-  background: #7BA8D4;
+  background: #aebfcf;
   color: #fff;
-  border-color: #5A8AC0;
+  border-color: #98a7b8;
   box-shadow: 0 0 20px rgba(123, 168, 212, 0.8);
 }
 
@@ -437,6 +437,7 @@ body {
 .skip-button:hover:not(.disabled) {
   background: rgba(255, 255, 255, 1);
   border-color: #666;
+  color: #333;
 }
 
 .skip-button.confirm {
