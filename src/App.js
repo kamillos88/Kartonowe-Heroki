@@ -229,7 +229,7 @@ function App() {
       <div className="intro-screen">
         <div className="intro-container">
           <h1 className="intro-title">
-            🏆 Złote Antosie 2024 🏆
+            🏆 Kartonowe Heroki 2025 🏆
           </h1>
           <p className="intro-subtitle">
             Głosowanie na najlepsze klipy z naszego serwera!
@@ -249,9 +249,9 @@ function App() {
           <div className="info-box">
             <h2 className="info-title">📋 Jak głosować?</h2>
             <ul className="info-list">
-              <li>• Zobaczysz {CATEGORIES.length} kategorii, każda z 8 clipami</li>
+              <li>• Zobaczysz {CATEGORIES.length} kategorii, każda z 8 klipami</li>
               <li>• Możesz zagłosować na TOP 3 klipy (🥇 🥈 🥉)</li>
-              <li>• Kliknij na clip, a potem wybierz tier (1, 2 lub 3)</li>
+              <li>• Kliknij na klip, a potem wybierz tier (1, 2 lub 3)</li>
               <li>• Możesz pominąć kategorię przyciskiem SKIP</li>
               <li>• Na końcu dostaniesz unikalny kod - wyślij go na priv!</li>
             </ul>
@@ -284,7 +284,7 @@ function App() {
               </p>
             </div>
             <p className="code-instruction">
-              Skopiuj ten kod i wyślij go na priv do organizatorów!
+              Skopiuj ten kod i wyślij go na priv do jednego z organizatorów!
             </p>
           </div>
 
@@ -423,7 +423,7 @@ function App() {
         {/* Info text */}
         {!hasVotedInCategory && (
           <p className="info-text">
-            Wybierz przynajmniej 1 clip aby odblokować przycisk ZAGŁOSUJ
+            Wybierz przynajmniej 1 klip aby odblokować przycisk ZAGŁOSUJ
           </p>
         )}
         {showSkipConfirm && (
