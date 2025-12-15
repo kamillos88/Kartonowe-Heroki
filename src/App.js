@@ -12,10 +12,10 @@ const CATEGORIES = [
     clips: [
       { id: 1, title: "Clip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wszyscy razem grają i dobrze się bawią" },
       { id: 2, title: "Clip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Moment gdzie wszyscy się wspierają" },
-      { id: 3, title: "Clip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" }, // Brak kontekstu - OK!
+      { id: 3, title: "Clip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
       { id: 4, title: "Clip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wspólne śmianie się z głupoty" },
       { id: 5, title: "Clip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Moment wsparcia po porażce" },
-      { id: 6, title: "Clip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" }, // Brak kontekstu - OK!
+      { id: 6, title: "Clip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
       { id: 7, title: "Clip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Wszyscy w voice chacie gadają o życiu" },
       { id: 8, title: "Clip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Rodzinny obiad w grze" },
     ]
@@ -50,7 +50,6 @@ const CATEGORIES = [
       { id: 8, title: "Fail #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "Przypadkowy drop broni wrogowi" },
     ]
   },
-  // Dodaj pozostałe 37 kategorii tutaj...
 ];
 
 // Generowanie unikalnego ID głosu
@@ -58,7 +57,7 @@ const generateVoteId = () => {
   return 'VOTE-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9).toUpperCase();
 };
 
-// Storage helper - używa localStorage
+// Storage helper - localStorage jako backup
 const saveVote = (voteId, data) => {
   localStorage.setItem(`vote:${voteId}`, JSON.stringify(data));
   return { key: `vote:${voteId}`, value: JSON.stringify(data) };
@@ -117,8 +116,8 @@ function App() {
     }
   }, [currentScreen, currentCategoryIndex, votes]);
 
-  // Funkcja głosowania
-  const handleVote = () => {
+  // Funkcja głosowania - MUSI BYĆ ASYNC!
+  const handleVote = async () => {
     if (!hasVotedInCategory) return;
 
     const categoryVote = {
@@ -137,9 +136,12 @@ function App() {
       setSelectedClips({ tier1: null, tier2: null, tier3: null });
       setShowContext({});
     } else {
+      // Koniec głosowania - zapisz do Firebase
       const id = generateVoteId();
       try {
+        // Zapisz do Firebase
         await saveVoteToFirebase(id, newVotes);
+        // Zapisz też lokalnie jako backup
         saveVote(id, newVotes);
         setVoteId(id);
         setCurrentScreen('summary');
@@ -151,8 +153,8 @@ function App() {
     }
   };
 
-  // Funkcja skip z potwierdzeniem
-  const handleSkip = () => {
+  // Funkcja skip z potwierdzeniem - MUSI BYĆ ASYNC!
+  const handleSkip = async () => {
     if (hasVotedInCategory) return;
     
     if (!showSkipConfirm) {
@@ -177,7 +179,9 @@ function App() {
     } else {
       const id = generateVoteId();
       try {
+        // Zapisz do Firebase
         await saveVoteToFirebase(id, newVotes);
+        // Zapisz też lokalnie jako backup
         saveVote(id, newVotes);
         setVoteId(id);
         setCurrentScreen('summary');
@@ -225,7 +229,7 @@ function App() {
       <div className="intro-screen">
         <div className="intro-container">
           <h1 className="intro-title">
-            🏆 Kartonowe Heroki 2025 🏆
+            🏆 Złote Antosie 2024 🏆
           </h1>
           <p className="intro-subtitle">
             Głosowanie na najlepsze klipy z naszego serwera!
