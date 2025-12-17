@@ -3,7 +3,7 @@ import { AlertCircle } from 'lucide-react';
 import { saveVoteToFirebase } from './firebase';
 import './index.css';
 
-// Przykładowe dane - TUTAJ WPISZ SWOJE KLIPY I KATEGORIE
+// KLIPY I KATEGORIE
 const CATEGORIES = [
   {
     id: 1,
@@ -37,7 +37,7 @@ const CATEGORIES = [
   },
   {
     id: 3,
-    name: "Rozmowa chuja z butem",
+    name: "Rozmowa Chuja z Butem",
     description: "Wybierz najbardziej absurdalną i bez sensu rozmowę",
     clips: [
       { id: 1, title: "Ciekawostka Patryja", videoUrl: "https://www.youtube.com/embed/vyZ64J_I0is" },
@@ -52,17 +52,15 @@ const CATEGORIES = [
   },
   {
     id: 4,
-    name: "Teraz Rodzina",
-    description: "Wybierz klipa na którym panuje rodzinna atmosfera",
+    name: "Wielki Fart",
+    description: "Wybierz moment gdzie ktoś miał niesamowite szczęście",
     clips: [
-      { id: 1, title: "Test", videoUrl: "https://www.youtube.com/embed/yq4Bsb7ZMRc" },
-      { id: 2, title: "Test2", videoUrl: "https://www.youtube.com/embed/uEr79672XOk" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "Teleport", videoUrl: "https://www.youtube.com/embed/-gY3YAzW-eM", context: "Kamil nie dość, że wydostał się z wymiaru, z którego szansa na ucieczkę była niska, to jeszcze został przeteleportowany za przeciwnika, dzięki czemu mógł go zabić" },
+      { id: 2, title: "Debil", videoUrl: "https://www.youtube.com/embed/8LuC8PpRQVY", context: "W DBD jeden z zabójców może wysłać przetrwańca w losowe miejsce na mapie, a Kuboxa akurat przeteleportowało przed wyjście" },
+      { id: 3, title: "GOOOL", videoUrl: "https://www.youtube.com/embed/kImgL9RS81Y" },
+      { id: 4, title: "Grzyb", videoUrl: "https://www.youtube.com/embed/-fJSgMVK3_k", context: "Tylko Kubox przeżył i trzymał grzyba w ręce. Przypadkowo go upuścił gdzie akurat leżało ciało Relika i okazało się, że ten grzyb ożywia" },
+      { id: 5, title: "Jedziemy", videoUrl: "https://www.youtube.com/embed/cJmV4a1hBWU", context: "Dwa razy Kamil wjechał w kogoś kto niósł przedmiot, a ten zamiast się rozbić, wpadł idealnie do wózka" },
+      { id: 6, title: "Thor", videoUrl: "https://www.youtube.com/embed/hBG1WEfOzA4", context: "Przeciwnik użył ulta który wznosi ją w górę, ale akurat jego sojusznik otworzył nad nim portal w którego wpadł i przeniósł się na drugą stronę mapy" },
     ]
   },
   {
@@ -70,14 +68,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -85,14 +83,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -100,14 +98,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -115,14 +113,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -130,14 +128,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -145,14 +143,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -160,14 +158,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -175,14 +173,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -190,14 +188,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -205,14 +203,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -220,14 +218,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -235,14 +233,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -250,14 +248,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -265,14 +263,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -280,14 +278,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -295,14 +293,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -310,14 +308,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -325,14 +323,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -340,14 +338,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -355,14 +353,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -370,14 +368,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -385,14 +383,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -400,14 +398,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -415,14 +413,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -430,14 +428,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -445,14 +443,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -460,14 +458,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -475,14 +473,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -490,14 +488,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -505,14 +503,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -520,14 +518,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -535,14 +533,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -550,14 +548,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -565,14 +563,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -580,14 +578,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
   {
@@ -595,14 +593,14 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
-      { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 6, title: "Klip #6", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-      { id: 7, title: "Klip #7", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 8, title: "Klip #8", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
+      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
     ]
   },
 ];
@@ -660,7 +658,7 @@ function App() {
     }
   }, []);
 
-  // Zapisuj progress przy każdej zmianie
+  // Zapisuj progres przy każdej zmianie
   useEffect(() => {
     if (currentScreen === 'voting') {
       saveProgress({
@@ -671,7 +669,7 @@ function App() {
     }
   }, [currentScreen, currentCategoryIndex, votes]);
 
-  // Funkcja głosowania - MUSI BYĆ ASYNC!
+  // Funkcja głosowania
   const handleVote = async () => {
     if (!hasVotedInCategory) return;
 
@@ -708,7 +706,7 @@ function App() {
     }
   };
 
-  // Funkcja skip z potwierdzeniem - MUSI BYĆ ASYNC!
+  // Funkcja skip z potwierdzeniem
   const handleSkip = async () => {
     if (hasVotedInCategory) return;
     
@@ -748,7 +746,7 @@ function App() {
     }
   };
 
-  // Wybór clipu do tiera
+  // Wybór klipu do tiera
   const selectClip = (clipId, tier) => {
     const currentTierClip = selectedClips[tier];
     

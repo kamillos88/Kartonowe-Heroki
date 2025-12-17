@@ -1,7 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
 
-// WKLEJ TUTAJ SWÓJ CONFIG Z FIREBASE (krok 2)
 const firebaseConfig = {
   apiKey: "AIzaSyD2bCKgLkEn9LcpsZCSPP2Gq2-0cAIWuAg",
   authDomain: "kartonowe-heroki.firebaseapp.com",
