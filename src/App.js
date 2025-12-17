@@ -55,8 +55,8 @@ const CATEGORIES = [
     name: "Teraz Rodzina",
     description: "Wybierz klipa na którym panuje rodzinna atmosfera",
     clips: [
-      { id: 1, title: "Klip #1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
-      { id: 2, title: "Klip #2", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", context: "" },
+      { id: 1, title: "Test", videoUrl: "https://www.youtube.com/embed/yq4Bsb7ZMRc" },
+      { id: 2, title: "Test2", videoUrl: "https://www.youtube.com/embed/uEr79672XOk" },
       { id: 3, title: "Klip #3", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
       { id: 4, title: "Klip #4", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
       { id: 5, title: "Klip #5", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",},
