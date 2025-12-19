@@ -83,14 +83,14 @@ const CATEGORIES = [
     name: "Liczę na Glicze",
     description: "Wybierz najbardziej absurdalny glitch lub bug w grze kąkuterowej",
     clips: [
-      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 1, title: "Rzyganie łomami", videoUrl: "https://www.youtube.com/embed/0bE8tEweNQw" },
+      { id: 2, title: "Geralt lewituje", videoUrl: "https://www.youtube.com/embed/Kcs1k8cWSMY" },
+      { id: 3, title: "HALO", videoUrl: "https://www.youtube.com/embed/LbCyV6ARhK0", context: "Z jakiegoś powodu Kamila nie słychać i on nie słyszy innych" },
+      { id: 4, title: "Ojciec poleciał", videoUrl: "https://www.youtube.com/embed/CCOXHBYy_9k" },
+      { id: 5, title: "Czwarty wymiar", videoUrl: "https://www.youtube.com/embed/NeYKtZzxczI" },
+      { id: 6, title: "Winda", videoUrl: "https://www.youtube.com/embed/mi2fljrxSZw" },
+      { id: 7, title: "Unun w windzie", videoUrl: "https://www.youtube.com/embed/cuu1gA70doE" },
+      { id: 8, title: "Przykuc", videoUrl: "https://www.youtube.com/embed/Umxhg0q-o7s" },
     ]
   },
   {
@@ -128,14 +128,14 @@ const CATEGORIES = [
     name: "Największy Chaos",
     description: "Wybierz najbardziej chaotyczny moment w którym nie wiadomo co się dzieje",
     clips: [
-      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 1, title: "Co tu sie dzieje", videoUrl: "https://www.youtube.com/embed/8OQo5mfIw6I" },
+      { id: 2, title: "Jaca u lekarza", videoUrl: "https://www.youtube.com/embed/-I9L-Cvpj5o" },
+      { id: 3, title: "Sklep", videoUrl: "https://www.youtube.com/embed/6R8_Xbt9D7k" },
+      { id: 4, title: "Nazoid się dudni", videoUrl: "https://www.youtube.com/embed/qvPhNzmPOAI" },
+      { id: 5, title: "Totalny rozpierdol", videoUrl: "https://www.youtube.com/embed/qWeYI_2dKNA" },
+      { id: 6, title: "Przejebane", videoUrl: "https://www.youtube.com/embed/5m75_wYgYDQ" },
+      { id: 7, title: "Fajerbol", videoUrl: "https://www.youtube.com/embed/krF1shwR-Mg" },
+      { id: 8, title: "Zero reakcji", videoUrl: "https://www.youtube.com/embed/KfL0LukCBHo" },
     ]
   },
   {
@@ -188,29 +188,29 @@ const CATEGORIES = [
     name: "Freaky",
     description: "Wybierz najbardziej freaky moment",
     clips: [
-      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 1, title: "Jaca", videoUrl: "https://www.youtube.com/embed/F-GEjpOzB6U" },
+      { id: 2, title: "Gitareczka", videoUrl: "https://www.youtube.com/embed/-u5PUHDABzo" },
+      { id: 3, title: "Backshoty", videoUrl: "https://www.youtube.com/embed/uhEkQBSRVlE" },
+      { id: 4, title: "Rób lód", videoUrl: "https://www.youtube.com/embed/99ARtFhYdwA" },
+      { id: 5, title: "Crazy Frog", videoUrl: "https://www.youtube.com/embed/ulNA3JZJCVQ" },
+      { id: 6, title: "GYATT", videoUrl: "https://www.youtube.com/embed/hloRPUvnsYc" },
+      { id: 7, title: "Stopy Briar", videoUrl: "https://www.youtube.com/embed/oWTv7ufG4D0" },
+      { id: 8, title: "Meet the Spy", videoUrl: "https://www.youtube.com/embed/DWQDRAuZcuA" },
     ]
   },
   {
     id: 14,
     name: "Freakazoid",
-    description: "Wybierz najbardziej freaky moment Nazoida",
+    description: "Wybierz najbardziej freaky moment z Nazoidem w roli głównej",
     clips: [
-      { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 1, title: "Klaskanie jajami", videoUrl: "https://www.youtube.com/embed/48KPlV2cTj4" },
+      { id: 2, title: "Gra się przestraszyła", videoUrl: "https://www.youtube.com/embed/-num1qE_jh8" },
+      { id: 3, title: "Ale ona ma", videoUrl: "https://www.youtube.com/embed/CfodVVL03Yo" },
+      { id: 4, title: "Co zrobisz z jego ciałem", videoUrl: "https://www.youtube.com/embed/HrHMsZJ5Hyo" },
+      { id: 5, title: "Nazoid jest freaky wobec menela", videoUrl: "https://www.youtube.com/embed/nlP_g3j8AD8" },
+      { id: 6, title: "Głosówka", videoUrl: "https://www.youtube.com/embed/i04Nn9Nmzdc" },
+      { id: 7, title: "Skręt jąder", videoUrl: "https://www.youtube.com/embed/HQeuYZYu1XU" },
+      { id: 8, title: "Zadyma w kiblu", videoUrl: "https://www.youtube.com/embed/fYO6HzyO3x8" },
     ]
   },
   {
@@ -263,14 +263,14 @@ const CATEGORIES = [
     name: "Najlepsza Reakcja",
     description: "Wybierz najśmieszniejszą reakcję na coś",
     clips: [
-      { id: 1, title: "Pies spawacz", videoUrl: "https://www.youtube.com/embed/ZrppxAy_IEk" },
+      { id: 1, title: "Pies spawacz", videoUrl: "https://www.youtube.com/embed/ZrppxAy_IEk", context: "Unun opowiada ten sam żart 50ty raz" },
       { id: 2, title: "Auchan", videoUrl: "https://www.youtube.com/embed/yVu-oFbdQII" },
       { id: 3, title: "Cichutko", videoUrl: "https://www.youtube.com/embed/n0tn2b7qYjk" },
       { id: 4, title: "Dobrze powiedział", videoUrl: "https://www.youtube.com/embed/a5MFe38bWn4" },
       { id: 5, title: "Jaca śmierć", videoUrl: "https://www.youtube.com/embed/MgIkKTfgHSA" },
       { id: 6, title: "Kurde co ty mi robisz", videoUrl: "https://www.youtube.com/embed/8WwP_d-UOsk" },
       { id: 7, title: "Nazoid przedrzeźnia", videoUrl: "https://www.youtube.com/embed/TX8CO6EV0Gs" },
-      { id: 8, title: "Najlepiej na szczura najebać", videoUrl: "https://www.youtube.com/embed/Y7JhZQ0l114" },
+      { id: 8, title: "Najlepiej na szczura najebać", videoUrl: "https://www.youtube.com/embed/2IS8_smTo-c", context: "Krids wkurwiony pomylił postać Kamila ze szczurem Jacka" },
     ]
   },
   {
@@ -280,7 +280,7 @@ const CATEGORIES = [
     clips: [
       { id: 1, title: "", videoUrl: "https://www.youtube.com/embed/" },
       { id: 2, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 3, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 3, title: "Krids coś tam płacze", videoUrl: "https://streamable.com/e/823uhw" },
       { id: 4, title: "", videoUrl: "https://www.youtube.com/embed/" },
       { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
       { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
@@ -298,7 +298,7 @@ const CATEGORIES = [
       { id: 5, title: "", videoUrl: "https://www.youtube.com/embed/" },
       { id: 6, title: "", videoUrl: "https://www.youtube.com/embed/" },
       { id: 7, title: "", videoUrl: "https://www.youtube.com/embed/" },
-      { id: 8, title: "", videoUrl: "https://www.youtube.com/embed/" },
+      { id: 8, title: "Bójka na WF-ie", videoUrl: "https://streamable.com/e/ghbtsb" },
     ]
   },
   {
@@ -352,12 +352,12 @@ const CATEGORIES = [
     description: "Wybierz najbardziej imponującą akcję",
     clips: [
       { id: 1, title: "Bramka roku", videoUrl: "https://www.youtube.com/embed/QlXwmtIPl0c" },
-      { id: 2, title: "Jaca władca piorunów", videoUrl: "https://www.youtube.com/embed/GnnVQj3_iQk" },
+      { id: 2, title: "Jaca władca piorunów", videoUrl: "https://www.youtube.com/embed/GnnVQj3_iQk", context: "Jaca stawia śrubę na ziemi i zabija beboka piorunem, który w nią trafia" },
       { id: 3, title: "Jaca z rowerem", videoUrl: "https://www.youtube.com/embed/F3d0aVfEH2M" },
       { id: 4, title: "Nazoid i jego triki z Afryki", videoUrl: "https://www.youtube.com/embed/7O-gpL43LjY" },
-      { id: 5, title: "Jackal", videoUrl: "https://www.youtube.com/embed/eLXWf-7QLbA" },
+      { id: 5, title: "Jackal", videoUrl: "https://www.youtube.com/embed/eLXWf-7QLbA", context: "Nazoid wygrywa mecz trickshotem z pistoletu, który przenosi ostatniego gracza na jego stronę" },
       { id: 6, title: "Refreks chudego byka", videoUrl: "https://www.youtube.com/embed/zSWeID8gJTU" },
-      { id: 7, title: "Trickshot", videoUrl: "https://www.youtube.com/embed/otlEGIa8KrY" },
+      { id: 7, title: "Trickshot", videoUrl: "https://www.youtube.com/embed/otlEGIa8KrY", context: "Kamil strzela harpunem i wyrzuca oponenta za burtę" },
       { id: 8, title: "Technika Pijanego Mistrza", videoUrl: "https://www.youtube.com/embed/2T2E2j0jdyU", context: "Kamil był w stanie upojenia alkoholowego" },
     ]
   },
@@ -366,12 +366,12 @@ const CATEGORIES = [
     name: "Najgorsze zagranie",
     description: "Wybierz najbardziej żenującą akcję",
     clips: [
-      { id: 1, title: "Dziadu", videoUrl: "https://www.youtube.com/embed/AnvSvCc9dHA" },
+      { id: 1, title: "Dziadu", videoUrl: "https://www.youtube.com/embed/AnvSvCc9dHA", context: "Wróg robi portal prowadzący do przepaści na środku mapy, a relik i tak w niego wpada mając rok czasu na reakcję" },
       { id: 2, title: "Kamil ma cela jak baba z wesela", videoUrl: "https://www.youtube.com/embed/rQRw_tkhxu0" },
       { id: 3, title: "Helikopter", videoUrl: "https://www.youtube.com/embed/EKSR0Rarykc" },
-      { id: 4, title: "Jak oni to trafili", videoUrl: "https://www.youtube.com/embed/wuaQViOHvhU" },
+      { id: 4, title: "Jak oni to trafili", videoUrl: "https://www.youtube.com/embed/wuaQViOHvhU", context: "Pijany Kamil źle się ustawił i bronił ścianę obok bramki" },
       { id: 5, title: "Krawężnik zasrany", videoUrl: "https://www.youtube.com/embed/z1_576aL2zo" },
-      { id: 6, title: "Krids nie trafia", videoUrl: "https://www.youtube.com/embed/B4locHYpyqg" },
+      { id: 6, title: "Krids nie trafia", videoUrl: "https://www.youtube.com/embed/B4locHYpyqg", context: "Krids gra zabójcą, który strzela harpunem z łańcuchami i stara się trafić Kamila" },
       { id: 7, title: "Nie wyszło", videoUrl: "https://www.youtube.com/embed/kIRtr2rY9ts" },
       { id: 8, title: "Wysnajpie go na linie", videoUrl: "https://www.youtube.com/embed/BCaZaK1Aacw" },
     ]
@@ -388,7 +388,7 @@ const CATEGORIES = [
       { id: 5, title: "Ja umieram, a moi koledzy tańczą", videoUrl: "https://www.youtube.com/embed/s57tXQkh71w" },
       { id: 6, title: "Jamming", videoUrl: "https://www.youtube.com/embed/JQYBCyFz3XQ" },
       { id: 7, title: "Ulubione Patryja", videoUrl: "https://www.youtube.com/embed/569MdfgtjVc" },
-      { id: 8, title: "Wielka pizda", videoUrl: "https://www.youtube.com/embed/kV6P8ZsDXWQ" },
+      { id: 8, title: "Wielka pizda", videoUrl: "https://streamable.com/e/9pny9i" },
     ]
   },
   {
@@ -403,7 +403,7 @@ const CATEGORIES = [
       { id: 5, title: "Niezręczna sytuacja", videoUrl: "https://www.youtube.com/embed/u-pqLCln9ws" },
       { id: 6, title: "Rudą nie wpuszczamy", videoUrl: "https://www.youtube.com/embed/YBHqYFuuP7s" },
       { id: 7, title: "Siema", videoUrl: "https://www.youtube.com/embed/rRa8FB34JYo" },
-      { id: 8, title: "Tak się kończy trollowanie", videoUrl: "https://www.youtube.com/embed/6ILJ8IdWFFU" },
+      { id: 8, title: "Tak się kończy trollowanie", videoUrl: "https://www.youtube.com/embed/6ILJ8IdWFFU", context: "Kubox udaje, że jest potworem podającym się za kolegów, a potem go spotyka" },
     ]
   },
   {
@@ -463,7 +463,7 @@ const CATEGORIES = [
       { id: 5, title: "Ja to rozbroję", videoUrl: "https://www.youtube.com/embed/bwttenKVgGY" },
       { id: 6, title: "Zdrajca pośród nas", videoUrl: "https://www.youtube.com/embed/IRrIvXCeZDA" },
       { id: 7, title: "Pedały", videoUrl: "https://www.youtube.com/embed/YdDwCbxcxD4" },
-      { id: 8, title: "Młot", videoUrl: "https://www.youtube.com/embed/N7YpEYIgQYY" },
+      { id: 8, title: "Młot", videoUrl: "https://www.youtube.com/embed/N7YpEYIgQYY", context: "Kamil jako zdrajca nie trafia Ununa szeryfa i zostaje jego pomocnikiem" },
     ]
   },
   {
@@ -486,14 +486,14 @@ const CATEGORIES = [
     name: "Pracownik Roku",
     description: "Wybierz najlepszego klipa z gry Supermarket Together",
     clips: [
-      { id: 1, title: "Mobbing w pracy", videoUrl: "https://www.youtube.com/embed/RDX2AYjk9zM" },
-      { id: 2, title: "To nie ja", videoUrl: "https://www.youtube.com/embed/asohhCuCwnc" },
+      { id: 1, title: "Mobbing w pracy", videoUrl: "https://streamable.com/e/vg31i7" },
+      { id: 2, title: "To nie ja", videoUrl: "https://streamable.com/e/hv9u7q", context: "Kamil zostawił karton na środku sklepu, Patryj myślał że to był Krids" },
       { id: 3, title: "Lody dla ochłody", videoUrl: "https://www.youtube.com/embed/ul6HvvxvKoM" },
       { id: 4, title: "Głupie pytanie", videoUrl: "https://www.youtube.com/embed/zNJL7xW1itI", context: "90% produktów kupowanych do sklepu Żobko to sól i pasta do zębów" },
       { id: 5, title: "Fontanna", videoUrl: "https://www.youtube.com/embed/ew-8hbCKUO4" },
-      { id: 6, title: "Kurczak", videoUrl: "https://www.youtube.com/embed/Te8-4mPFnQU" },
+      { id: 6, title: "Kurczak", videoUrl: "https://streamable.com/e/l1xqi9" },
       { id: 7, title: "Patryj biznesmen", videoUrl: "https://www.youtube.com/embed/mvkL9Ymij4I" },
-      { id: 8, title: "W sklepie Andrzejka może być tylko sól", videoUrl: "https://www.youtube.com/embed/rjDUcz_2WJw", context: "Wbiliśmy do sklepu jakiegoś randoma którego jedynym produktem na półkach była sól" },
+      { id: 8, title: "W sklepie Andrzejka może być tylko sól", videoUrl: "https://www.youtube.com/embed/rjDUcz_2WJw", context: "Chłopaki troszczą się o monopol sklepu Andrzeja na sól i wyrzucają każdy inny produkt" },
     ]
   },
   {
