@@ -802,8 +802,10 @@ function App() {
             <ul className="info-list">
               <li>• Zobaczysz {CATEGORIES.length} kategorii, prawie każda z 8 klipami</li>
               <li>• Możesz zagłosować na TOP 3 klipy (🥇 🥈 🥉)</li>
-              <li>• Kliknij na klip, a potem wybierz tier (1, 2 lub 3)</li>
-              <li>• Możesz pominąć kategorię przyciskiem SKIP</li>
+              <li>• Kliknij przycisk tier (1, 2 lub 3) pod klipem aby go wybrać</li>
+              <li>• Najedź na ikonę ℹ️ przy niektórych klipach aby zobaczyć kontekst</li>
+              <li>• Możesz pominąć kategorię przyciskiem SKIP (z potwierdzeniem)</li>
+              <li>• Możesz wrócić do strony później - postęp się zapisuje!</li>
               <li>• Na końcu dostaniesz unikalny kod - wyślij go na priv!</li>
             </ul>
           </div>
