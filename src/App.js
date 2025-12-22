@@ -104,7 +104,7 @@ const CATEGORIES = [
       { id: 4, title: "Sigma", videoUrl: "https://www.youtube.com/embed/MxLPxPv92cQ" },
       { id: 5, title: "Sposób na sashimi", videoUrl: "https://www.youtube.com/embed/_CcNPe0z94Q" },
       { id: 6, title: "Ten sam gość", videoUrl: "https://www.youtube.com/embed/_rqFCl1ZkCM" },
-      { id: 7, title: "Widelec", videoUrl: "https://www.youtube.com/embed/YlwZX3RoD48", context: "Przychodzi Krids z grabiami w ręce" },
+      { id: 7, title: "Widelec", videoUrl: "https://www.youtube.com/embed/YlwZX3RoD48", context: "Przychodzi Krids z widłami w ręce" },
       { id: 8, title: "Wyłancznik", videoUrl: "https://www.youtube.com/embed/0qZWbUHCp30" },
     ]
   },
@@ -280,7 +280,7 @@ const CATEGORIES = [
     clips: [
       { id: 1, title: "Tauryna", videoUrl: "https://www.youtube.com/embed/Xlqcc5xqt7U" },
       { id: 2, title: "My jesteśmy na modach", videoUrl: "https://www.youtube.com/embed/OAN7iUEhpec" },
-      { id: 3, title: "Krids coś tam płacze", videoUrl: "https://streamable.com/e/823uhw" },
+      { id: 3, title: "Krids coś tam płacze", videoUrl: "https://streamable.com/e/ska3uo" },
       { id: 4, title: "Proste", videoUrl: "https://www.youtube.com/embed/3A7Rkzyjb5U" },
       { id: 5, title: "Szok", videoUrl: "https://www.youtube.com/embed/uIIzrHkCYfo" },
       { id: 6, title: "Ciężkie życie dpsa", videoUrl: "https://www.youtube.com/embed/3pzsIbteUxc" },
@@ -298,7 +298,7 @@ const CATEGORIES = [
       { id: 5, title: "Napad na bank", videoUrl: "https://www.youtube.com/embed/Y1fA-pTL2DE" },
       { id: 6, title: "Rozjebane", videoUrl: "https://www.youtube.com/embed/eZkeONyml94" },
       { id: 7, title: "Kasy samoobsługowe", videoUrl: "https://www.youtube.com/embed/1aaoCM4xO6E" },
-      { id: 8, title: "Bójka na WF-ie", videoUrl: "https://streamable.com/e/ghbtsb" },
+      { id: 8, title: "Bójka na WF-ie", videoUrl: "https://streamable.com/e/fkkv8g" },
     ]
   },
   {
@@ -388,7 +388,7 @@ const CATEGORIES = [
       { id: 5, title: "Ja umieram, a moi koledzy tańczą", videoUrl: "https://www.youtube.com/embed/s57tXQkh71w" },
       { id: 6, title: "Jamming", videoUrl: "https://www.youtube.com/embed/JQYBCyFz3XQ" },
       { id: 7, title: "Ulubione Patryja", videoUrl: "https://www.youtube.com/embed/569MdfgtjVc" },
-      { id: 8, title: "Wielka pizda", videoUrl: "https://streamable.com/e/9pny9i" },
+      { id: 8, title: "Wielka pizda", videoUrl: "https://streamable.com/e/042j6n" },
     ]
   },
   {
@@ -486,12 +486,12 @@ const CATEGORIES = [
     name: "Pracownik Roku",
     description: "Wybierz najlepszego klipa z gry Supermarket Together",
     clips: [
-      { id: 1, title: "Mobbing w pracy", videoUrl: "https://streamable.com/e/vg31i7" },
-      { id: 2, title: "To nie ja", videoUrl: "https://streamable.com/e/hv9u7q", context: "Kamil zostawił karton na środku sklepu, Patryj myślał że to był Krids" },
+      { id: 1, title: "Mobbing w pracy", videoUrl: "https://streamable.com/e/mjewmk" },
+      { id: 2, title: "To nie ja", videoUrl: "https://streamable.com/e/oryd4r", context: "Kamil zostawił karton na środku sklepu, Patryj myślał że to był Krids" },
       { id: 3, title: "Lody dla ochłody", videoUrl: "https://www.youtube.com/embed/ul6HvvxvKoM" },
       { id: 4, title: "Głupie pytanie", videoUrl: "https://www.youtube.com/embed/zNJL7xW1itI", context: "90% produktów kupowanych do sklepu Żobko to sól i pasta do zębów" },
       { id: 5, title: "Fontanna", videoUrl: "https://www.youtube.com/embed/ew-8hbCKUO4" },
-      { id: 6, title: "Kurczak", videoUrl: "https://streamable.com/e/l1xqi9" },
+      { id: 6, title: "Kurczak", videoUrl: "https://streamable.com/e/z801fu" },
       { id: 7, title: "Patryj biznesmen", videoUrl: "https://www.youtube.com/embed/mvkL9Ymij4I" },
       { id: 8, title: "W sklepie Andrzejka może być tylko sól", videoUrl: "https://www.youtube.com/embed/rjDUcz_2WJw", context: "Chłopaki troszczą się o monopol sklepu Andrzeja na sól i wyrzucają każdy inny produkt" },
     ]
