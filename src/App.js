@@ -177,7 +177,7 @@ const CATEGORIES = [
       { id: 2, title: "Ciągnik", videoUrl: "https://www.youtube.com/embed/bVKDJd-q1-k" },
       { id: 3, title: "Cziperki", videoUrl: "https://www.youtube.com/embed/6jMhnt-V7pY" },
       { id: 4, title: "Otwieranie sklepu", videoUrl: "https://www.youtube.com/embed/T99EkM3lx2I" },
-      { id: 5, title: "Paleciak", videoUrl: "https://www.youtube.com/embed/-1ILRWTEYyc" },
+      { id: 5, title: "Paleciak", videoUrl: "https://www.dailymotion.com/embed/video/k75U0c1qxwsFWPEw6qK" },
       { id: 6, title: "Ragequit", videoUrl: "https://www.youtube.com/embed/-zWqSkmfO0c", context: "Krids był szkalowany cały poziom" },
       { id: 7, title: "Scyzoryk", videoUrl: "https://www.youtube.com/embed/0LqRBoQVMfI" },
       { id: 8, title: "Nienawiść do Relika", videoUrl: "https://www.youtube.com/embed/CJ33E8jdvSY" },
